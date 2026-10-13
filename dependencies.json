@@ -1,0 +1,8 @@
+{
+  "comfortzone_heatpump": {
+    "repository": "https://github.com/qix67/comfortzone_heatpump",
+    "revision": "c0a896db8163d721e373c983bc651e7863e8c28b",
+    "archive_url": "https://codeload.github.com/qix67/comfortzone_heatpump/tar.gz/c0a896db8163d721e373c983bc651e7863e8c28b",
+    "sha256": "9067d9b5896512af02d862eea9cd3712e95e937ff12d91953230e0cb513e80c8"
+  }
+}

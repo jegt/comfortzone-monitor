@@ -25,7 +25,7 @@ The upstream project gives this six-contact connector pinout:
 | 5 | 24 V (25 V without load) |
 | 6 | GND |
 
-Source: [qix67's README](libraries/comfortzone_heatpump/README.txt). The 25 V reading is its reported no-load measurement, rather than a guaranteed voltage specification. Pin numbers depend on viewing orientation; confirm the actual contacts and cable mapping.
+Source: [qix67's README](https://github.com/qix67/comfortzone_heatpump/blob/c0a896db8163d721e373c983bc651e7863e8c28b/README.txt). The 25 V reading is its reported no-load measurement, rather than a guaranteed voltage specification. Pin numbers depend on viewing orientation; confirm the actual contacts and cable mapping.
 
 [Hardware and wiring notes](docs/hardware.md) cover power, termination and USB adapters. Confirm wiring for your installation before applying power.
 
@@ -37,9 +37,12 @@ Install [Arduino CLI](https://arduino.github.io/arduino-cli/) and Python 3. The 
 arduino-cli core update-index --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
 arduino-cli core install esp32:esp32@3.3.11 --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
 arduino-cli lib install 'FastCRC@1.44.0'
+python3 tools/device.py setup
 cp comfortzone_wifi/secrets.example.h comfortzone_wifi/secrets.h
 chmod 600 comfortzone_wifi/secrets.h
 ```
+
+The setup command downloads the checksum-locked parser revision in `dependencies.json` into the ignored `.dependencies/` cache. Builds verify and reuse it, downloading it on first use if needed. See [dependencies](docs/dependencies.md) for offline use and updates.
 
 Edit `comfortzone_wifi/secrets.h` with your Wi-Fi name/password, hostname and a long random OTA password. You can generate a password with `python3 -c 'import secrets; print(secrets.token_urlsafe(32))'`. The configuration and build outputs are ignored by Git; compiled firmware contains the credentials.
 
@@ -115,6 +118,6 @@ Local configuration and captures are ignored by Git. Firmware binaries built wit
 
 ## License and acknowledgements
 
-GPL-3.0-or-later; see [LICENSE](LICENSE). The vendored parser is based on [qix67/comfortzone_heatpump](https://github.com/qix67/comfortzone_heatpump), commit `c0a896db8163d721e373c983bc651e7863e8c28b`, with its original license and attribution preserved. FastCRC is installed separately through Arduino Library Manager.
+GPL-3.0-or-later; see [LICENSE](LICENSE). The parser dependency is [qix67/comfortzone_heatpump](https://github.com/qix67/comfortzone_heatpump), by Eric PREVOTEAU, pinned to commit `c0a896db8163d721e373c983bc651e7863e8c28b`. Setup downloads its source with the original license and attribution; upstream source is not committed here. FastCRC is installed separately through Arduino Library Manager.
 
 Hardware sources: [Waveshare product/wiki](https://www.waveshare.com/wiki/ESP32-S3-RS485-CAN) and [schematic](https://files.waveshare.com/wiki/ESP32-S3-RS485-CAN/ESP32-S3-RS485-CAN-Schematic.pdf). This is an independent community project.

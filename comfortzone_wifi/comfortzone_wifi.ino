@@ -1,5 +1,5 @@
 #include "loggamera_names.h"
-// GPL-3.0-or-later; integrates qix67/comfortzone_heatpump (see ../libraries).
+// GPL-3.0-or-later; integrates the pinned qix67/comfortzone_heatpump dependency.
 #include <Arduino.h>
 #include <WiFi.h>
 #include <sys/socket.h>

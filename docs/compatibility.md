@@ -1,6 +1,6 @@
 # Compatibility and validation
 
-The framing comes from the Comfortzone protocol family supported by the pinned [qix67 library](../libraries/comfortzone_heatpump/README.txt). The monitor uses its parser with a separate v1.1 measurement and control profile.
+The framing comes from the Comfortzone protocol family supported by the pinned [qix67 library](https://github.com/qix67/comfortzone_heatpump/blob/c0a896db8163d721e373c983bc651e7863e8c28b/README.txt). The monitor uses its parser with a separate v1.1 measurement and control profile.
 
 ## Supported profile
 
@@ -20,7 +20,7 @@ All 70 direct fields have been observed in incoming traffic. The API adds five d
 
 ## Tests and runtime checks
 
-`sh tools/test_all.sh` runs five Python tooling tests and the C++ measurement/control tests with AddressSanitizer and UndefinedBehaviorSanitizer. Synthetic fixtures cover all 75 fields, bit patterns, signed values, faults, truncation/CRC rejection, derived-field freshness, input validation, route pairing, quiet-gap gating, acknowledgement/address checks, fresh read-back, timeouts, interrupted updates and timer rollover.
+`sh tools/test_all.sh` runs the Python tooling/dependency tests and the C++ measurement/control tests with AddressSanitizer and UndefinedBehaviorSanitizer. Synthetic fixtures cover all 75 fields, bit patterns, signed values, faults, truncation/CRC rejection, derived-field freshness, input validation, route pairing, quiet-gap gating, acknowledgement/address checks, fresh read-back, timeouts, interrupted updates and timer rollover.
 
 Firmware 0.8.3 was built and uploaded through Arduino OTA. After reboot, 75 measurements resumed, Swedish name metadata, the dashboard and an SSE measurement event were verified, with zero UART/CRC errors in the acceptance sample. Desktop/mobile rendering and stale/reconnection behavior were also checked during earlier acceptance. These results do not replace validation on a different installation.
 

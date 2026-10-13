@@ -25,6 +25,7 @@ id_ed25519*
 /captures/
 /diagnostics/
 # Generated files
+.dependencies/
 __pycache__/
 *.pyc
 .DS_Store

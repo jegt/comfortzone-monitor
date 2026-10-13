@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build/upload and collect diagnostics; reads credentials locally, never prints them."""
 import argparse, json, pathlib, re, subprocess, time, urllib.request
+from setup_dependencies import ensure_dependencies
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 FQBN = 'esp32:esp32:esp32s3:USBMode=hwcdc,CDCOnBoot=cdc,FlashSize=16M,PartitionScheme=app3M_fat9M_16MB,PSRAM=opi'
 
@@ -23,7 +24,8 @@ def run(args, secrets=()):
     if p.wait(): raise SystemExit('Arduino CLI operation failed')
 
 def build():
-    run(['arduino-cli','compile','--fqbn',FQBN,'--libraries',str(ROOT/'libraries'),
+    libraries = ensure_dependencies()
+    run(['arduino-cli','compile','--fqbn',FQBN,'--libraries',str(libraries),
          '--build-path',str(ROOT/'build'),str(ROOT/'comfortzone_wifi')])
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -90,13 +92,15 @@ def stream_collect(host,destination,password,duration=0):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('action',choices=['build','usb','ota','status','collect'])
+    p.add_argument('action',choices=['setup','build','usb','ota','status','collect'])
     p.add_argument('--port',default='/dev/cu.usbmodem101')
     p.add_argument('--host',help='Defaults to DEVICE_HOSTNAME.local from private configuration')
     p.add_argument('--output',default='comfortzone-traffic.jsonl')
     p.add_argument('--seconds',type=float,default=0)
     p.add_argument('--poll',action='store_true',help='Use legacy HTTP polling instead of SSE')
-    a=p.parse_args(); c=config()
+    a=p.parse_args()
+    if a.action=='setup': ensure_dependencies();return
+    c=config()
     if not a.host:a.host=c['DEVICE_HOSTNAME']+'.local'
     if a.action=='build': build();return
     if not c['WIFI_SSID'] or len(c['OTA_PASSWORD'])<16:

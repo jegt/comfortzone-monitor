@@ -15,7 +15,7 @@ The upstream EX50 documentation describes two parallel RS485 sockets: one for th
 | 5 | 24 V (25 V without load) |
 | 6 | GND |
 
-Source: the [upstream README](../libraries/comfortzone_heatpump/README.txt). The 25 V figure is a reported no-load measurement, not a guaranteed voltage specification. Confirm connector viewing orientation and actual cable contact mapping. Six contacts in six positions are often sold as RJ12, although the upstream text uses RJ11 6P6C.
+Source: the [upstream README](https://github.com/qix67/comfortzone_heatpump/blob/c0a896db8163d721e373c983bc651e7863e8c28b/README.txt). The 25 V figure is a reported no-load measurement, not a guaranteed voltage specification. Confirm connector viewing orientation and actual cable contact mapping. Six contacts in six positions are often sold as RJ12, although the upstream text uses RJ11 6P6C.
 
 Connect A and B to the corresponding RS485 terminals. The supply contacts must not be connected to a USB RS485 adapter or an Ethernet socket. RS485 uses an active transceiver, not a passive USB cable converter.
 
