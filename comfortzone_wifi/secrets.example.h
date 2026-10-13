@@ -1,0 +1,5 @@
+#pragma once
+#define WIFI_SSID "YOUR_WIFI_NAME"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
+#define OTA_PASSWORD "REPLACE_WITH_A_LONG_RANDOM_PASSWORD"
+#define DEVICE_HOSTNAME "comfortzone-monitor"

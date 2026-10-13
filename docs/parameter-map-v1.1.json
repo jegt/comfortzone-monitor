@@ -1,0 +1,570 @@
+[
+  {
+    "name": "Highgaspresalarm",
+    "parameter_id": 14,
+    "block": "02010000",
+    "offset": 29,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX01"
+  },
+  {
+    "name": "HWOverheatalarm",
+    "parameter_id": 19,
+    "block": "02010000",
+    "offset": 30,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX01"
+  },
+  {
+    "name": "Lackofcoolantalarm",
+    "parameter_id": 20,
+    "block": "02010000",
+    "offset": 30,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX02"
+  },
+  {
+    "name": "Pressureratioalarm",
+    "parameter_id": 24,
+    "block": "02010000",
+    "offset": 30,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX20"
+  },
+  {
+    "name": "UnknownHPboxalarm",
+    "parameter_id": 27,
+    "block": "02010000",
+    "offset": 31,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX01"
+  },
+  {
+    "name": "Filterchangealarm",
+    "parameter_id": 28,
+    "block": "02010000",
+    "offset": 31,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX02"
+  },
+  {
+    "name": "CWOverheatalarm",
+    "parameter_id": 30,
+    "block": "02010000",
+    "offset": 31,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX80"
+  },
+  {
+    "name": "TE0Sensorfail",
+    "parameter_id": 39,
+    "block": "02010000",
+    "offset": 33,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX01"
+  },
+  {
+    "name": "TE1Sensorfail",
+    "parameter_id": 40,
+    "block": "02010000",
+    "offset": 33,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX02"
+  },
+  {
+    "name": "TE2Sensorfail",
+    "parameter_id": 41,
+    "block": "02010000",
+    "offset": 33,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX04"
+  },
+  {
+    "name": "TE3Sensorfail",
+    "parameter_id": 42,
+    "block": "02010000",
+    "offset": 33,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX08"
+  },
+  {
+    "name": "TE4Sensorfail",
+    "parameter_id": 43,
+    "block": "02010000",
+    "offset": 33,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX10"
+  },
+  {
+    "name": "TE5Sensorfail",
+    "parameter_id": 44,
+    "block": "02010000",
+    "offset": 33,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX20"
+  },
+  {
+    "name": "TE6Sensorfail",
+    "parameter_id": 45,
+    "block": "02010000",
+    "offset": 33,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX40"
+  },
+  {
+    "name": "TE7Sensorfail",
+    "parameter_id": 46,
+    "block": "02010000",
+    "offset": 33,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX80"
+  },
+  {
+    "name": "TE24Sensorfail",
+    "parameter_id": 50,
+    "block": "02010000",
+    "offset": 36,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX01"
+  },
+  {
+    "name": "Fanstate",
+    "parameter_id": 83,
+    "block": "02007a03",
+    "offset": 91,
+    "scale": 1,
+    "data_type": "OneByteUnsigned"
+  },
+  {
+    "name": "CWCompressorfreq",
+    "parameter_id": 90,
+    "block": "0201c802",
+    "offset": 10,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "Compressorpower",
+    "parameter_id": 120,
+    "block": "0201c802",
+    "offset": 12,
+    "scale": 1,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "Hours",
+    "parameter_id": 608,
+    "block": "02010000",
+    "offset": 4,
+    "scale": 1,
+    "data_type": "OneByteUnsigned"
+  },
+  {
+    "name": "Minutes",
+    "parameter_id": 609,
+    "block": "02010000",
+    "offset": 5,
+    "scale": 1,
+    "data_type": "OneByteUnsigned"
+  },
+  {
+    "name": "Seconds",
+    "parameter_id": 610,
+    "block": "02010000",
+    "offset": 6,
+    "scale": 1,
+    "data_type": "OneByteUnsigned"
+  },
+  {
+    "name": "Day",
+    "parameter_id": 611,
+    "block": "02010000",
+    "offset": 7,
+    "scale": 1,
+    "data_type": "OneByteUnsigned"
+  },
+  {
+    "name": "Month",
+    "parameter_id": 612,
+    "block": "02010000",
+    "offset": 8,
+    "scale": 1,
+    "data_type": "OneByteUnsigned"
+  },
+  {
+    "name": "YearAdd2000",
+    "parameter_id": 613,
+    "block": "02010000",
+    "offset": 9,
+    "scale": 1,
+    "data_type": "OneByteUnsigned"
+  },
+  {
+    "name": "Fireplaceactionon",
+    "parameter_id": 614,
+    "block": "02011602",
+    "offset": 156,
+    "scale": 1,
+    "data_type": "TwoBytesUnsigned"
+  },
+  {
+    "name": "CWControlmode",
+    "parameter_id": 616,
+    "block": "02000000",
+    "offset": 12,
+    "scale": 1,
+    "data_type": "OneByteUnsigned"
+  },
+  {
+    "name": "HWPriority",
+    "parameter_id": 617,
+    "block": "02000000",
+    "offset": 14,
+    "scale": 1,
+    "data_type": "OneByteUnsigned"
+  },
+  {
+    "name": "CWHolidaytime",
+    "parameter_id": 629,
+    "block": "02001602",
+    "offset": 140,
+    "scale": 1,
+    "data_type": "TwoBytesUnsigned"
+  },
+  {
+    "name": "CWHeatingcurve",
+    "parameter_id": 630,
+    "block": "0201c802",
+    "offset": 108,
+    "scale": 1,
+    "data_type": "OneByteUnsigned"
+  },
+  {
+    "name": "CWRoomsetting",
+    "parameter_id": 631,
+    "block": "02016401",
+    "offset": 166,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "CWAdjustwhenout10",
+    "parameter_id": 633,
+    "block": "02016401",
+    "offset": 124,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "CWAdjustwhenout5",
+    "parameter_id": 634,
+    "block": "02016401",
+    "offset": 126,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "CWAdjustwhenout0",
+    "parameter_id": 635,
+    "block": "02016401",
+    "offset": 128,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "CWAdjustwhenoutm5",
+    "parameter_id": 636,
+    "block": "02016401",
+    "offset": 130,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "CWAdjustwhenoutm10",
+    "parameter_id": 637,
+    "block": "02016401",
+    "offset": 132,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "CWAdjustwhenoutm15",
+    "parameter_id": 638,
+    "block": "02016401",
+    "offset": 134,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "CWMinimumFlowReturn",
+    "parameter_id": 641,
+    "block": "02001602",
+    "offset": 170,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "CWHEAllowed",
+    "parameter_id": 645,
+    "block": "0200c802",
+    "offset": 104,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "HWSetting",
+    "parameter_id": 663,
+    "block": "0200c802",
+    "offset": 171,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "Filterchangeperiod",
+    "parameter_id": 679,
+    "block": "02007a03",
+    "offset": 122,
+    "scale": 1,
+    "data_type": "TwoBytesUnsigned"
+  },
+  {
+    "name": "CWOn",
+    "parameter_id": 682,
+    "block": "02010000",
+    "offset": 26,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX04Inverted"
+  },
+  {
+    "name": "HWOn",
+    "parameter_id": 683,
+    "block": "02010000",
+    "offset": 26,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX04"
+  },
+  {
+    "name": "HWExtra",
+    "parameter_id": 684,
+    "block": "02010000",
+    "offset": 24,
+    "scale": 1,
+    "data_type": "OneByteUnsigned"
+  },
+  {
+    "name": "HWExtrareached",
+    "parameter_id": 685,
+    "block": "02010000",
+    "offset": 0,
+    "scale": 1,
+    "data_type": "OneByteUnsigned"
+  },
+  {
+    "name": "TE0Outdoortemp",
+    "parameter_id": 686,
+    "block": "02010000",
+    "offset": 46,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "TE24Hotwater",
+    "parameter_id": 687,
+    "block": "02010000",
+    "offset": 94,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "Addpower",
+    "parameter_id": 711,
+    "block": "0201c802",
+    "offset": 14,
+    "scale": 1,
+    "data_type": "TwoBytesUnsigned"
+  },
+  {
+    "name": "TE1Flowwater",
+    "parameter_id": 727,
+    "block": "02010000",
+    "offset": 48,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "TE2Returnwater",
+    "parameter_id": 728,
+    "block": "02010000",
+    "offset": 50,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "TE3Indoortemp",
+    "parameter_id": 729,
+    "block": "02010000",
+    "offset": 52,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "TE4Hotgastemp",
+    "parameter_id": 730,
+    "block": "02010000",
+    "offset": 54,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "TE5Exchangerout",
+    "parameter_id": 731,
+    "block": "02010000",
+    "offset": 56,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "TE6Evaporatorin",
+    "parameter_id": 732,
+    "block": "02010000",
+    "offset": 58,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "TE7Exhaustair",
+    "parameter_id": 733,
+    "block": "02010000",
+    "offset": 60,
+    "scale": 10,
+    "data_type": "TwoBytesSigned"
+  },
+  {
+    "name": "HighgaspresAlarmreset",
+    "parameter_id": 745,
+    "block": "02010000",
+    "offset": 37,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX01"
+  },
+  {
+    "name": "HWOverheatalarmreset",
+    "parameter_id": 750,
+    "block": "02010000",
+    "offset": 38,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX01"
+  },
+  {
+    "name": "Lackofcoolantalarmreset",
+    "parameter_id": 751,
+    "block": "02010000",
+    "offset": 38,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX02"
+  },
+  {
+    "name": "Pressureratioalarmreset",
+    "parameter_id": 755,
+    "block": "02010000",
+    "offset": 38,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX20"
+  },
+  {
+    "name": "UnknownHPboxalarmreset",
+    "parameter_id": 758,
+    "block": "02010000",
+    "offset": 39,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX01"
+  },
+  {
+    "name": "CWOverheatalarmreset",
+    "parameter_id": 761,
+    "block": "02010000",
+    "offset": 39,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX80"
+  },
+  {
+    "name": "TE0Sensorfailreset",
+    "parameter_id": 770,
+    "block": "02010000",
+    "offset": 41,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX01"
+  },
+  {
+    "name": "TE1Sensorfailreset",
+    "parameter_id": 771,
+    "block": "02010000",
+    "offset": 41,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX02"
+  },
+  {
+    "name": "TE2Sensorfailreset",
+    "parameter_id": 772,
+    "block": "02010000",
+    "offset": 41,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX04"
+  },
+  {
+    "name": "TE3Sensorfailreset",
+    "parameter_id": 773,
+    "block": "02010000",
+    "offset": 41,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX08"
+  },
+  {
+    "name": "TE4Sensorfailreset",
+    "parameter_id": 774,
+    "block": "02010000",
+    "offset": 41,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX10"
+  },
+  {
+    "name": "TE5Sensorfailreset",
+    "parameter_id": 775,
+    "block": "02010000",
+    "offset": 41,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX20"
+  },
+  {
+    "name": "TE6Sensorfailreset",
+    "parameter_id": 776,
+    "block": "02010000",
+    "offset": 41,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX40"
+  },
+  {
+    "name": "TE7Sensorfailreset",
+    "parameter_id": 777,
+    "block": "02010000",
+    "offset": 41,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX80"
+  },
+  {
+    "name": "TE24Sensorfailreset",
+    "parameter_id": 781,
+    "block": "02010000",
+    "offset": 44,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX01"
+  },
+  {
+    "name": "LMFilterchangealarmmute",
+    "parameter_id": 10018,
+    "block": "02010000",
+    "offset": 39,
+    "scale": 1,
+    "data_type": "OneByteBitPatternX02"
+  }
+]

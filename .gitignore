@@ -1,0 +1,33 @@
+# Local configuration and credential-bearing firmware
+comfortzone_wifi/secrets.h
+build/
+private/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+# Device images, captures, telemetry, and archives
+*.img
+*.ext4
+*.bin
+*.elf
+*.hex
+*.uf2
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.log
+*.jsonl
+/captures/
+/diagnostics/
+# Generated files
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+core
+core.*
